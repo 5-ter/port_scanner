@@ -1,3 +1,11 @@
+
+/code_projects/*
+!/code_projects/.gitignore
+!/code_projects/port_scanner/
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
