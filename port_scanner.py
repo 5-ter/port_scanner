@@ -39,16 +39,12 @@ if arg_len > 2:
             if start < 1 or end > 65535:
                 print("range must be between 1-65535, using default")
                 ports = default_list
-
             else:
                 ports = range(start, end +1)
 
-            
         except ValueError:
             print("invalid range, using default")
             ports = default_list
-            
-
 else:
     ports = default_list
 
@@ -62,18 +58,14 @@ for port in ports:
     try:
         new_socket.connect((ip, port))
         print(f"port {port} is open")
-
-    
+        
     except ConnectionRefusedError:
         print(f"Port {port} is closed")
-
     except socket.timeout:
         print(f"Port {port} failed to connect")
-
     except OSError as e:
         print(f"port {port} error: {e}")
 
-    
     finally:
         new_socket.close()
        
