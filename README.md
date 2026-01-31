@@ -7,7 +7,6 @@ A simple and efficient command-line port scanner built with Python for scanning 
 - **Multiple Scan Modes**: Default common ports, full port range, or custom port ranges
 - **IP Validation**: Validates IP address format before scanning
 - **Smart Error Handling**: Distinguishes between closed ports, timeouts, and connection errors
-- **Configurable Timeout**: 2-second timeout for fast scanning
 - **Range Validation**: Automatically handles backwards ranges and validates port numbers (1-65535)
 - **Graceful Fallbacks**: Falls back to default ports when invalid ranges are provided
 
@@ -74,6 +73,8 @@ The scanner provides detailed feedback for each port:
 
 ## Planned Updates (v2.0)
 
+
+- **Custom timeout time** (currently 5s)
 - **Quiet Mode (`--quiet` or `-q`)**: Only display open ports, suppress closed/timeout messages
 - **Improved Argument Handling**: Better parsing with help messages and more flexible flag combinations
 - **Verbose Mode**: Additional details about the scanning process
